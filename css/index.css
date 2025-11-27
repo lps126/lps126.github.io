@@ -3,7 +3,7 @@
     background-position: -70px;
     background-size: cover;
     border-radius: 10px;
-    height: 600px;
+    height: 625px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +57,9 @@
 #about-button {
     margin-top: 50px;
 }
+.about-link {
+    display: none;
+}
 
 #download {
     background-image: url("../images/eyeball.jpg");;
@@ -79,45 +82,57 @@
     margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+    #landing {
+        background-position: center;
+        align-items: start;
+        padding-left: 150px;
+    }
+    #about {
+        align-items: start;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about-text {
+        text-align: left;
+    }
+    #about-cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    .about-card-img {
+        width: 250px;
+        height: 350px;
+        margin: 0;
+        object-fit: cover;
+    }
+    .about-card {
+        margin-right: 20px;
+    }
+    .about-card-name, .about-card-title {
+        width: 100%;
+    }
+    .about-link {
+        display: flex;
+        border-bottom: 2px solid var(--blue);
+        height: fit-content;
+    }
+    .about-link-name, .about-link-arrow {
+        color: var(--blue);
+    }
+    #about-button {
+        display: none;
+    }
+    
+    #download {
+        align-items: start;
+        justify-content: start;
+        padding-left: 100px;
+        padding-top: 100px;
+        height: 500px;
+    }
+}
 
-footer {
-    background: var(--primary);
-    color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#footer-header {
-    color: white;
-}
 
-#footer-email {
-    margin-top: 10px;
-}
-
-#footer-links {
-    margin-top: 100px;
-}
-.footer-link {
-    display: flex;
-    border-bottom: 2px solid white;
-    width:fit-content;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-.footer-link:hover .footer-link-arrow {
-    margin-left: 15px;
-}
-
-.footer-link-name {
-    color: white;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-}
-.footer-link-arrow {
-    margin-left: 5px;
-    font-family: "Inter", sans-serif;
-    transition: 0.3s;
-}

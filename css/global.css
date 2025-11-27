@@ -3,6 +3,7 @@
     --bg: #F3F3F3;
     --primary: #5A57FF;
     --borders: #545765;
+    --blue: #00AAFF;
 }
 body {
     margin: 0;
@@ -60,7 +61,7 @@ body {
 }
 .button:hover, .button:focus {
     cursor: pointer;
-    filter: brightness(90%);
+    filter: brightness(80%);
 }
 
 .button-fill {
@@ -71,6 +72,7 @@ body {
     background: transparent;
     border: 2px solid var(--primary);
     color: var(--primary);
+    background: var(--bg);
 }
 
 header {
@@ -93,7 +95,7 @@ nav {
     height: 97.5%;
     padding: 2.5%;
     top: 0;
-    right: -500px;
+    right: -100%;
     background: white;
     display: flex;
     flex-direction: column;
@@ -114,3 +116,94 @@ nav {
     color: var(--primary);
 }
 
+footer {
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer-header {
+    color: white;
+}
+
+#footer-email {
+    margin-top: 10px;
+}
+
+#footer-links {
+    margin-top: 100px;
+}
+.footer-link {
+    display: flex;
+    border-bottom: 2px solid white;
+    width:fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.footer-link:hover .footer-link-arrow {
+    margin-left: 15px;
+}
+
+.footer-link-name {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+.footer-link-arrow {
+    margin-left: 5px;
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding-top: 95px;
+    }
+    header {
+        height: 25px;
+    }
+    .title {
+        font-size: 96px;
+    }
+    .header {
+        font-size: 50px;
+    }
+    .subheader {
+        font-size: 24px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #footer-info, #footer-links {
+        margin: 0;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+    }
+    #footer-info {
+        justify-content: center;
+    }
+    #footer-links {
+        width: 150px;
+    }
+    .footer-link {
+        height: fit-content;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #footer-email {
+        margin-top: 10px;
+    }
+    #footer-copyright {
+        margin-top: 10px;
+    }
+}
