@@ -17,6 +17,12 @@
 #landing-button {
     margin-top: 20px;
 }
+
+#landing-caption, #banner-caption {
+    display: block;
+    text-align: right;
+}
+
 #about {
     display: flex;
     align-items: center;
@@ -52,6 +58,9 @@
     width: 90%;
     text-align: left;
     margin-top: 0;
+}
+#about-caption {
+    width: 90%;
 }
 
 #about-button {
@@ -124,6 +133,9 @@
     }
     #about-button {
         display: none;
+    }
+    #about-caption {
+        width: 100%;
     }
     
     #download {

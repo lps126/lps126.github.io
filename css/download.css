@@ -50,4 +50,10 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    #download-caption {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
 }
