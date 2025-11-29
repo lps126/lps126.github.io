@@ -25,6 +25,8 @@
     height: 70px;
     margin-bottom: 20px;
     transition: 0.3s;
+    text-decoration: none;
+    color: var(--borders);
 }
 .download-card:hover, .download-card:focus {
     filter: brightness(80%);
