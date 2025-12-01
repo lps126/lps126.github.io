@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 768px) {
     #landing {
-        background-position: center;
+        background-position: center top;
         align-items: start;
         padding-left: 150px;
     }

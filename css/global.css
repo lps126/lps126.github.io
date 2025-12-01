@@ -12,7 +12,7 @@ body {
     background: var(--bg);
     color: var(--borders);
     overflow-x: hidden;
-    padding-top: 70px;
+    padding-top: 90px;
 }
 
 .title {
@@ -89,6 +89,7 @@ header {
     width: 96%;
     background: var(--bg);
     padding: 2%;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -176,10 +177,11 @@ footer {
 
 @media screen and (min-width: 768px) {
     body {
-        padding-top: 95px;
+        padding-top: 110px;
     }
     header {
-        height: 25px;
+        height: 20px;
+        border-bottom: 2px solid var(--primary);
     }
     .title {
         font-size: 96px;
